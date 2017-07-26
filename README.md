@@ -1,2 +1,2 @@
 # simpleSocketIOChatRoom
-# this is a simple socket.io whit nodejs demo
+# this is a simple socket.io chatroom whit nodejs demo

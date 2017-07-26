@@ -1,0 +1,19 @@
+title JIM的聊天室
+h1 JIM的聊天室
+div(style={display:'flex'})
+    div(style={width:'60%',border:'1px solid gray','border-right':'none'})
+        h3(style={'text-align':'center'}) 聊天室
+        div(id='chatView',style={height:500,overflow:'hidden','overflow-y':'auto','padding-left':20})
+    div(style={width:'40%',border:'1px solid gray'})
+        h3 在线用户
+        div(id='userView',style={height:500,overflow:'hidden','overflow-y':'auto','padding-left':20})
+div(style={'text-align':'center'})
+    input(
+        style={width:400,height:60,padding:20,'margin-top':40,'font-size':20}
+        id='msgInput'
+        onkeydown='sendMSG()'
+        )
+
+script(src='/socket.io/socket.io.js')
+script
+    include ../client.js
